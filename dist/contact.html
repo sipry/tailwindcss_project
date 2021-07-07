@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+    <nav>
+        <div class="px-20 py-3 mx-auto max-w-6x1">
+            <div class="flex justify-between">
+                <a href="index.html" class="text-4xl font-modelo hover:text-gray-700">Modelo</a>
+                <div class="items-center hidden space-x-4 md:flex">
+                    <a href="about.html" class="hover:text-gray-700">About</a>
+                    <a href="service.html" class="hover:text-gray-700">Service</a>
+                    <a href="contact.html" class="hover:text-gray-700">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button class="hamberger-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- hamberger -->
+
+        <div class="hidden hamberger md:hidden">
+            <a href="about.html" class="block px-4 py-2 hover:bg-gray-300">About</a>
+            <a href="service.html" class="block px-4 py-2 hover:bg-gray-300">Service</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-gray-300">Contact</a>
+        </div>
+    </nav>
+
+    <section class="py-10 mt-10 ">
+        <div class="px-2 mx-auto sm:w-3/4 lg:w-5/12">
+            <h1 class="text-3xl tracking-widest text-center">Contact Us</h1>
+        </div>
+        <div class="container grid max-w-screen-lg grid-cols-1 gap-16 mt-16 md:grid-cols-1 lg:grid-cols-1">
+            <div class="flex flex-col rounded-md shadow-2xl">
+                <div class="flex flex-col items-center p-6">
+                    <form action="" class="space-y-2">
+                        <label class="flex tracking-widest" for="">Name: </label>
+                        <input class="px-8 py-1 bg-gray-200 rounded shadow-inner hover:bg-gray-300" type="text">
+                        <label class="flex tracking-widest" for="">Email: </label>
+                        <input class="px-8 py-1 bg-gray-200 rounded shadow-inner hover:bg-gray-300" type="text">
+                        <label class="flex tracking-widest" for="">Message: </label>
+                        <textarea
+                            class="max-w-screen-md min-h-full px-6 py-1 bg-gray-200 rounded shadow-inner hover:bg-gray-300"
+                            type="text"></textarea>
+                    </form>
+
+                    <button type="button"
+                        class="self-center inline-block px-8 py-2 mt-8 bg-yellow-400 rounded hover:shadow-md hover:bg-yellow-200">
+                        Submit
+                    </button>
+                    <p class="mt-4 mb-2 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a
+                        ducimus reiciendis eaque.</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <script>
+        const btn = document.querySelector(".hamberger-btn");
+        const menu = document.querySelector(".hamberger");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Modelo</title>
+</head>
+
+<body class="bg-gray-100">
+  <nav>
+    <div class="px-20 py-3 mx-auto max-w-6x1">
+      <div class="flex justify-between">
+        <a href="index.html" class="text-4xl font-modelo hover:text-gray-700">Modelo</a>
+        <div class="items-center hidden space-x-4 md:flex">
+          <a href="about.html" class="hover:text-gray-700">About</a>
+          <a href="service.html" class="hover:text-gray-700">Service</a>
+          <a href="contact.html" class="hover:text-gray-700">Contact</a>
+        </div>
+        <div class="flex items-center md:hidden">
+          <button class="hamberger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- hamberger -->
+
+    <div class="hidden hamberger md:hidden">
+      <a href="about.html" class="block px-4 py-2 hover:bg-gray-300">About</a>
+      <a href="service.html" class="block px-4 py-2 hover:bg-gray-300">Service</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-300">Contact</a>
+    </div>
+  </nav>
+
+  <body>
+    <section class="py-10 mt-10">
+      <div class="px-2 mx-auto sm:w-3/4 lg:w-5/12">
+        <h1 class="text-3xl tracking-widest text-center">Services</h1>
+
+      </div>
+      <!-- cards -->
+      <div class="container grid max-w-screen-lg grid-cols-1 gap-16 mt-16 md:grid-cols-2 lg:grid-cols-3 ">
+        <div class="flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+          <div class="flex flex-col items-center p-6">
+            <img src="./img/img-3.jpg" alt="" />
+            <h3 class="mt-5 mb-2 text-lg tracking-wider">Title</h3>
+            <p class="mb-2 font-light">Some lorem ipsum goes here just to see how it looks</p>
+          </div>
+          <hr class="border-b" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 px-0.5 py-2 bg-yellow-400 rounded hover:shadow-md hover:bg-yellow-200">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+          <div class="flex flex-col items-center p-6">
+            <img src="./img/img-2.jpg" alt="" />
+            <h3 class="mt-5 mb-2 text-lg tracking-wider">Title</h3>
+            <p class="mb-2 font-light">Some lorem ipsum goes here just to see how it looks
+              you can add more text to the card just as a test :)</p>
+          </div>
+          <hr class="border-b" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 px-0.5 py-2 bg-yellow-400 rounded hover:shadow-md hover:bg-yellow-200">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-md shadow-lg hover:shadow-2xl">
+          <div class="flex flex-col items-center p-6">
+            <img src="./img/img-4.jpg" alt="" />
+            <h3 class="mt-5 mb-2 text-lg tracking-wider">Title</h3>
+            <p class="mb-2 font-light">Some lorem ipsum or you can show less text</p>
+          </div>
+          <hr class="border-b" />
+          <div class="flex p-6">
+            <button type="button" class="flex-1 px-0.5 py-2 bg-yellow-400 rounded hover:shadow-md hover:bg-yellow-200">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="mt-12 text-center">
+        lorem perferendis voluptatibus esse fugiat. Eveniet
+        repudianda eiste non veritatis labore temporibus ratione,
+        <a href="#" class="text-blue-400">voluptatibus esse fugiat.</a>
+      </p>
+
+    </section>
+
+    <script>
+      const btn = document.querySelector(".hamberger-btn");
+      const menu = document.querySelector(".hamberger");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+  </body>
+
+</html>
